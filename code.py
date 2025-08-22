@@ -32,14 +32,14 @@ def guess_number(start, end):
             print(f"Computer generated number is less than {mid} but still bigger than {gn}")
             guess_number(gn + 1, mid - 1)
         else:
-            print(f"Computer generated number is less than {mid} but smaller than {gn}")
+            print(f"Computer generated number is less than {mid} and smaller than {gn}")
             guess_number(start, gn - 1)
     elif gn > mid and x > mid:
         if gn > x:
             print(f"Computer generated number is more than {mid} but smaller than {gn}")
             guess_number(mid + 1, gn - 1)
         else:
-            print(f"Computer generated number is more than {mid} but bigger than {gn}")
+            print(f"Computer generated number is more than {mid} and bigger than {gn}")
             guess_number(gn + 1, end)
     else:
         print("Error. Try again.")
